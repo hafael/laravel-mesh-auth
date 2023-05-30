@@ -1,0 +1,37 @@
+{
+    "name": "hafael/laravel-mesh-auth",
+    "description": "API Authentication method between Laravel apps",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "keywords": ["laravel", "php", "api", "microservices", "api", "mesh", "east-west", "gateway", "auth", "authorization"],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=5.5"
+    },
+    "authors": [
+        {
+            "name": "Rafael Villa Verde",
+            "email": "villa655321verde@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hafael\\Mesh\\Auth\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hafael\\Mesh\\Auth\\MeshAuthServiceProvider"
+            ]
+        }
+    }
+}
