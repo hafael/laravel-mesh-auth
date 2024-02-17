@@ -12,9 +12,9 @@ class MeshAuthServiceProvider extends ServiceProvider
             __DIR__.'/../config/auth-mesh.php' => config_path('auth-mesh.php')
         ], 'auth-mesh-config');
 
-        $this->publishes([
-            __DIR__.'/../database/migrations/' => database_path('migrations')
-        ], 'auth-mesh-migrations');
+        // $this->publishes([
+        //     __DIR__.'/../database/migrations/' => database_path('migrations')
+        // ], 'auth-mesh-migrations');
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
